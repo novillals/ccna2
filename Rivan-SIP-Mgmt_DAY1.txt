@@ -174,8 +174,8 @@ voice register dn 1
  name ~~11
  allow watch
 voice register dn 2
- number ~~22
- name ~~22
+ number ~~
+ name ~~
  allow watch
 voice register dn 3
  number ~~33
@@ -271,9 +271,9 @@ conf t
   destination-pattern 21..
   session target ipv4:10.21.21.1
   codec g711ULAW
- dial-peer voice 22 Voip
-  destination-pattern 22..
-  session target ipv4:10.22.22.1
+ dial-peer voice  Voip
+  destination-pattern ..
+  session target ipv4:10...1
   codec g711ULAW
  dial-peer voice 31 Voip
   destination-pattern 31..
@@ -354,3 +354,4 @@ int gi 0/1
  ip ospf network point-to-point
 
 end
+
